@@ -16,8 +16,10 @@ public class FeignConfig {
     }
 
     @Bean
-    Logger.Level feignLoggerLever() {
-        return Logger.Level.FULL;
+    Logger.Level feignLoggerLevel() {
+        // BASIC logs only method, URL, status and timing — never headers or
+        // bodies — so downstream auth tokens and PII are not leaked to logs.
+        return Logger.Level.BASIC;
     }
 
 }
