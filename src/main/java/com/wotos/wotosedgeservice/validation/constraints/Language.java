@@ -1,6 +1,6 @@
 package com.wotos.wotosedgeservice.validation.constraints;
 
-import com.wotos.wotosvehicleservice.validation.LanguageValidator;
+import com.wotos.wotosedgeservice.validation.LanguageValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
